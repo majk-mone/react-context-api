@@ -1,0 +1,37 @@
+/* Custom transitions and minor tweaks over Bootstrap */
+
+.transition-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.transition-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Scrollbar styling for a consistent look */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #212529;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #495057;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6c757d;
+}
+
+/* Ensuring cards have a subtle border in dark mode */
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
